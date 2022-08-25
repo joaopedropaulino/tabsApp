@@ -1,10 +1,10 @@
 <ion-card>
   <ion-card-header>
     <ion-item>
-    <ion-card-title class="cidade">Lençois Paulista</ion-card-title>
+    <ion-card-title class="cidade">{{previsao.name}}</ion-card-title>
   <ion-item slot="end">
     <ion-icon name="cloudy-outline" class="nuvemh"></ion-icon>
-    <ion-label>25°C</ion-label>
+    <ion-label>{{previsao.main.temp}}</ion-label>
   </ion-item>
 </ion-item>
   </ion-card-header>
@@ -27,7 +27,7 @@
     32°C/26°C
   </ion-item>
   <ion-item slot="end">
-    <ion-icon name="sunny"  class="icone"></ion-icon> sol
+    <ion-icon name="sunny"  class="icone"></ion-icon>
   </ion-item>
 </ion-item>
 
@@ -39,7 +39,7 @@
     31°C/15°C
   </ion-item>
   <ion-item slot="end">
-    <ion-icon name="cloudy"  class="icone"></ion-icon> nublado
+    <ion-icon name="cloudy"  class="icone"></ion-icon>
   </ion-item>
 </ion-item>
 
@@ -51,7 +51,7 @@
      29°C/16°C
   </ion-item>
   <ion-item slot="end">
-    <ion-icon name="rainy"  class="icone"></ion-icon>Chuva
+    <ion-icon name="rainy"  class="icone"></ion-icon>
   </ion-item>
 </ion-item>
   </ion-card>
